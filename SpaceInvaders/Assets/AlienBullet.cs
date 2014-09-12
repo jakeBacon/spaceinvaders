@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AlienBullet : MonoBehaviour {
 	
-	public float speed = 1.0f;
+	public float speed = 4.0f;
 	private Vector3 target;
 	
 	// Use this for initialization

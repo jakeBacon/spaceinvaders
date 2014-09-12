@@ -20,9 +20,9 @@ public class Player : MonoBehaviour {
 			nextFire += cooldown;
 			Instantiate(bullet, this.transform.position, Quaternion.identity);
 		}
-		if (Input.GetKey(KeyCode.LeftArrow) && pos.x > -2.5f)
+		if (Input.GetKey(KeyCode.LeftArrow) && pos.x > -6.0f)
 			this.transform.position = new Vector3(pos.x - 0.1f, pos.y, pos.z);
-		if (Input.GetKey(KeyCode.RightArrow) && pos.x < 2.5f)
+		if (Input.GetKey(KeyCode.RightArrow) && pos.x < 6.0f)
 			this.transform.position = new Vector3(pos.x + 0.1f, pos.y, pos.z);
 	}
 }

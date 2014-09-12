@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Alien : MonoBehaviour {
 
-	public float horDistance = 1.0f;
+	public float horDistance = 5.0f;
 	public float verDistance = 0.5f;
-	public float speed = 0.4f;
+	public float speed = 2.0f;
 	public GameObject bullet;
-	public float minShootDelay = 1.0f;
+	public float minShootDelay = 3.0f;
 	public float maxShootDelay = 7.0f;
 	//private float startTime;
 	private Vector3 startingPosition;
