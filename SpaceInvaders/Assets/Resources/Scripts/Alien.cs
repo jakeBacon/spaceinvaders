@@ -10,26 +10,33 @@ public class Alien : MonoBehaviour {
 	public float minShootDelay = 3.0f;
 	public float maxShootDelay = 7.0f;
 	//private float startTime;
-	private Vector3 startingPosition;
-	private Vector3 target;
+	//private Vector3 startingPosition;
+	//private Vector3 target;
 	private float nextShootTime = 0.0f;
 
 	// Use this for initialization
 	void Start () {
 		//this.startTime = Time.time;
-		this.startingPosition = this.transform.position;
-		this.target = this.startingPosition + new Vector3(this.horDistance, 0, 0);
+
+		//this.startingPosition = this.transform.position;
+		//this.target = this.startingPosition + Vector3.up;
+
 		this.nextShootTime = Random.Range(minShootDelay, maxShootDelay);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		this.transform.LookAt(Vector3.zero, Vector3.back);
+		this.transform.RotateAround(Vector3.back, Vector3.back, 10 * Time.deltaTime);
+
+/*
 		Vector3 currentPosition = this.transform.position;
 		Vector3 newPosition = Vector3.MoveTowards(currentPosition, this.target, speed * Time.deltaTime);
 		this.transform.position = newPosition;
-		
-		//print (this.target);
-		
+
+		print (this.target);
+
 		if (newPosition == target)
 		{
 			if (newPosition.x == startingPosition.x)
@@ -47,7 +54,7 @@ public class Alien : MonoBehaviour {
 					this.target = newPosition - new Vector3(0, this.verDistance, 0);               
 			}
 		}
-
+*/
 		if (Time.time > nextShootTime)
 		{
 			Instantiate(bullet, this.transform.position, Quaternion.identity);

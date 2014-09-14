@@ -10,11 +10,13 @@ public class AlienInstantiation : MonoBehaviour {
 		int i = 0;
 		int posX = 0;
 		bool isPosXReset = false;
+
 		while (i < 6) {
 			gameObject = Instantiate(Resources.Load("Prefabs/Alien"), new Vector3(posX, 0, 0), Quaternion.identity) as GameObject;
 			i++;
 			posX += 2;
 		}
+
 		while (i >= 6 && i < 12) {
 			if (isPosXReset == false)  {
 				posX = 0;
@@ -24,6 +26,7 @@ public class AlienInstantiation : MonoBehaviour {
 			i++;
 			posX += 2;
 		}
+
 		while (i >= 12 && i < 18) {
 			if (isPosXReset == true)  {
 				posX = 0;
