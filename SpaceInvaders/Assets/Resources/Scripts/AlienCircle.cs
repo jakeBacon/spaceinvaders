@@ -48,16 +48,16 @@ public class AlienCircle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float speed = 0.01f;
-		Vector3 alienMovementX = pointPrefab.transform.position;
+		//Vector3 alienMovementX = pointPrefab.transform.position;
 		Vector3 alienMovementY = pointPrefab.transform.position;
 
-		alienMovementX.x = pointPrefab.transform.position.x - speed;
-		alienMovementY.y = pointPrefab.transform.position.y + speed;
+		//alienMovementX.x = pointPrefab.transform.position.x - speed;
+		alienMovementY.y = pointPrefab.transform.position.y - speed;
 
 		pointPrefab.transform.position = alienMovementY;
-		pointPrefab.transform.position = alienMovementX;
+		//pointPrefab.transform.position = alienMovementX;
 
-		print (alienMovementX);
 		print (alienMovementY);
+		//print (alienMovementY);
 	}
 }

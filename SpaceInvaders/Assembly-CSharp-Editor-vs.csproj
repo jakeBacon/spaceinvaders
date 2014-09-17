@@ -81,6 +81,9 @@
      <None Include="Assets\ProCore\Prototype\Shader\UnlitColor-Overlay.shader" />
      <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorEmission.shader" />
      <None Include="Assets\ProCore\Prototype\About\Credits.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/Public/Documents/Unity Projects/spaceinvaders_itu/SpaceInvaders/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="ProBuilderCore">
  <HintPath>C:/Users/Public/Documents/Unity Projects/spaceinvaders_itu/SpaceInvaders/Assets/ProCore/Prototype/Classes/ProBuilderCore.dll</HintPath>
  </Reference>
@@ -101,6 +104,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{DC16EE57-7B5A-6A7C-DFB5-53D1BC51EF58}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
       <Project>{435C8792-8CED-684F-1777-1C6A741F16E3}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>

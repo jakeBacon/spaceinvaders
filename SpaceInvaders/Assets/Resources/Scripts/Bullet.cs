@@ -8,25 +8,27 @@ public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.target = this.transform.position + new Vector3(0, 20, 0);
+	//	this.target = this.transform.position + new Vector3(0, 20, 0);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 currentPosition = this.transform.position;
-		Vector3 newPosition = Vector3.MoveTowards(currentPosition, this.target, speed * Time.deltaTime);
-		this.transform.position = newPosition;
+	//	Vector3 currentPosition = this.transform.position;
+//		Vector3 newPosition = Vector3.MoveTowards(currentPosition, this.target, speed * Time.deltaTime);
+//		this.transform.position = newPosition;
 
 		if (this.transform.position.y > 4.8f)
-			GameObject.Destroy(this.gameObject);
+			Rigidbody.Destroy(this.gameObject);
 	}
 
 	void OnCollisionEnter(Collision collision)
 	{
 		if (collision.gameObject.tag == "Alien")
 		{
-			GameObject.Destroy(collision.gameObject);
-			GameObject.Destroy(this.gameObject);
+			Rigidbody.Destroy(collision.gameObject);
+			Rigidbody.Destroy(this.gameObject);
+		} else {
+			Rigidbody.Destroy(this.gameObject, 0.9f);
 		}
 	}
 }
