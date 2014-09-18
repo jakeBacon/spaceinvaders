@@ -3,13 +3,17 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-	public float cooldown = 0.1f; // minimum time between bullets
+	public GUIText ScoreGUI;
+	public float cooldown;
 	public GameObject Bullet;
-	private float nextFire = 1.0f; // next time when a bullet can be fired
+	private float nextFire = 1.0f;
+	private bool fireReload = false;
+	private int score;
 
 	// Use this for initialization
 	void Start () {
-	
+		score = 0;
+		UpdateScore();
 	}
 	
 	// Update is called once per frame
@@ -20,10 +24,26 @@ public class Player : MonoBehaviour {
 			transform.position = new Vector2(pos.x + Input.GetAxis("Horizontal"), pos.y + Input.GetAxis("Vertical"));
 		}
 		
-		// Update is called once per frame
 		if ((Input.GetKey(KeyCode.Space) || Input.GetButton("PS4_L1") || Input.GetButton("PS4_R1")) && Time.time >= nextFire) {
-				nextFire += cooldown;
-				GameObject shot = (GameObject)Instantiate(Bullet, this.transform.position, this.transform.rotation);
+			Shot();
 		}
+	}
+
+	bool Shot() {
+		if (Time.time >= nextFire) {
+			nextFire = Time.time + cooldown;
+			fireReload = true;
+			GameObject shot = (GameObject)Instantiate(Bullet, this.transform.position, this.transform.rotation);
+		}
+		return fireReload;
+	}
+
+	public void AddScore (int newScoreValue) {
+		score += newScoreValue;
+		UpdateScore(); 
+	}
+	
+	void UpdateScore () {
+		ScoreGUI.text = "Score: "+ score;
 	}
 }

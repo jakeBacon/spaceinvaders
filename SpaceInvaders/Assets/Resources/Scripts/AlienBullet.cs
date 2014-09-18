@@ -19,13 +19,13 @@ public class AlienBullet : MonoBehaviour {
 		this.transform.position = newPosition;
 	}
 	
-	void OnCollisionEnter(Collision collision)
-	{
-		if (collision.gameObject.tag == "Player")
-		{
+	void OnCollisionEnter(Collision collision) {
+		if (collision.gameObject.tag == "Player") {
 			AudioSource.PlayClipAtPoint(GameOver, transform.position);
-			Rigidbody.Destroy(collision.gameObject);
-			Rigidbody.Destroy(this.gameObject);
+			GameObject.Destroy(collision.gameObject);
+			GameObject.Destroy(this.gameObject);
+		} else {
+			GameObject.Destroy(this.gameObject, 2);
 		}
 	}
 }
