@@ -3,6 +3,7 @@ using System.Collections;
 
 public class AlienInstantiation : MonoBehaviour {
 
+	public AudioClip GameIntro;
 	public int initNumberOfAliens = 20;
 	public float minSpawnDelay = 1.0f;
 	public float maxSpawnDelay = 10.0f;
@@ -14,6 +15,9 @@ public class AlienInstantiation : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		audio.clip = GameIntro;
+		audio.Play();
+
 		for (int i = 0; i < (initNumberOfAliens/4); i++) { // Left screen side
 			AlienClone = Instantiate(Resources.Load("Prefabs/Alien"), new Vector2(Random.Range(-8, -7), Random.Range(-7, 7)), Quaternion.identity) as GameObject;
 		}

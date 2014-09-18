@@ -2,13 +2,14 @@
 using System.Collections;
 
 public class AlienBullet : MonoBehaviour {
-	
+
+	public AudioClip GameOver;
 	public float speed = 4.0f;
 	private Vector3 target;
 	
 	// Use this for initialization
 	void Start () {
-		this.target = this.transform.position - new Vector3(0, 20, 0);
+		this.target = this.transform.position + transform.up * 20;
 	}
 	
 	// Update is called once per frame
@@ -16,17 +17,15 @@ public class AlienBullet : MonoBehaviour {
 		Vector3 currentPosition = this.transform.position;
 		Vector3 newPosition = Vector3.MoveTowards(currentPosition, this.target, speed * Time.deltaTime);
 		this.transform.position = newPosition;
-		
-		if (this.transform.position.y < -3.0f)
-			GameObject.Destroy(this.gameObject);
 	}
 	
 	void OnCollisionEnter(Collision collision)
 	{
 		if (collision.gameObject.tag == "Player")
 		{
-			GameObject.Destroy(collision.gameObject);
-			GameObject.Destroy(this.gameObject);
+			AudioSource.PlayClipAtPoint(GameOver, transform.position);
+			Rigidbody.Destroy(collision.gameObject);
+			Rigidbody.Destroy(this.gameObject);
 		}
 	}
 }
