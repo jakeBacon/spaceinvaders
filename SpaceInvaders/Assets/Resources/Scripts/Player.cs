@@ -4,14 +4,22 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
 	public GUIText ScoreGUI;
+	public GUIText restartText;
+	public GUIText gameOverText;
 	public float cooldown;
 	public GameObject Bullet;
 	private float nextFire = 1.0f;
 	private bool fireReload = false;
+	private bool gameOver;
+	private bool restart;
 	private int score;
 
 	// Use this for initialization
 	void Start () {
+		gameOver = false;
+		restart = false;
+		gameOverText.text = "";
+		restartText.text = "";
 		score = 0;
 		UpdateScore();
 	}
@@ -26,6 +34,17 @@ public class Player : MonoBehaviour {
 		
 		if ((Input.GetKey(KeyCode.Space) || Input.GetButton("PS4_L1") || Input.GetButton("PS4_R1")) && Time.time >= nextFire) {
 			Shot();
+		}
+
+		if (gameOver) {
+			restartText.text = "Press 'Circle' to try again.";
+			restart = true;
+		}
+
+		if (restart) {
+			if (Input.GetButton("PS4_O")) {
+				Application.LoadLevel(Application.loadedLevel);
+			}
 		}
 	}
 
@@ -45,5 +64,10 @@ public class Player : MonoBehaviour {
 	
 	void UpdateScore () {
 		ScoreGUI.text = "Score: "+ score;
+	}
+
+	public void GameOver () {
+		gameOverText.text = "Game Over!";
+		gameOver = true;
 	}
 }

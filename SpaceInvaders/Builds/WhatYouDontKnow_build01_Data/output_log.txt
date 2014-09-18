@@ -1,0 +1,131 @@
+Initialize engine version: 4.5.3f3 (fca41a4fabea)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 5800 Series (ID=0x6899)
+    Vendor:   ATI
+    VRAM:     1005 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\ProBuilderCore.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\ProBuilderCore.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\ProBuilderMeshOps.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\ProBuilderMeshOps.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\ProCore.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\ProCore.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\SixBySeven.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\SixBySeven.dll into Unity Child Domain
+- Completed reload, in  0.061 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Public\Documents\Unity Projects\spaceinvaders_itu\SpaceInvaders\Builds\WhatYouDontKnow_build01_Data\Managed\Boo.Lang.dll (this message is harmless)
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 2.503932 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 163.
+Total: 2.596536 ms (FindLiveObjects: 0.035364 ms CreateObjectMapping: 0.033905 ms MarkObjects: 0.129061 ms  DeleteObjects: 1.330715 ms)
+
+Kan ikke finde 'Player' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 3.314393 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 163.
+Total: 2.304872 ms (FindLiveObjects: 0.017499 ms CreateObjectMapping: 0.025520 ms MarkObjects: 0.119217 ms  DeleteObjects: 1.165561 ms)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 2.868147 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 163.
+Total: 2.596900 ms (FindLiveObjects: 0.017499 ms CreateObjectMapping: 0.025155 ms MarkObjects: 0.157133 ms  DeleteObjects: 1.391600 ms)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Kan ikke finde 'TheCheese' scriptet!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

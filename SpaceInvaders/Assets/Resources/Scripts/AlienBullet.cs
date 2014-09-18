@@ -6,10 +6,18 @@ public class AlienBullet : MonoBehaviour {
 	public AudioClip GameOver;
 	public float speed = 4.0f;
 	private Vector3 target;
+	private TheCheese cheese;
 	
 	// Use this for initialization
 	void Start () {
 		this.target = this.transform.position + transform.up * 20;
+		GameObject cheeseObject = GameObject.FindWithTag("TheCheese");
+		if (cheeseObject != null) {
+			cheese = cheeseObject.GetComponent<TheCheese>();
+		}
+		if (cheese == null) {
+			Debug.Log("Kan ikke finde 'TheCheese' scriptet!");
+		}
 	}
 	
 	// Update is called once per frame
@@ -24,6 +32,7 @@ public class AlienBullet : MonoBehaviour {
 			AudioSource.PlayClipAtPoint(GameOver, transform.position);
 			GameObject.Destroy(collision.gameObject);
 			GameObject.Destroy(this.gameObject);
+			cheese.GameOver();
 		} else {
 			GameObject.Destroy(this.gameObject, 2);
 		}
